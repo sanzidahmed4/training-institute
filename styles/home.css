@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
+    /* color: #0e3481; */
+    min-height: 100vh;
+}
+/* Banner styling */
+.banner {
+    background-color: #84ac64;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-content h3{
+    text-align: center;
+    margin-top: 8px;
+}
+
+.banner-content p{
+    text-align: center;
+    margin-top: 8px;
+}
+
+.banner img{
+    height: 150px;
+    width: auto;
+}
+.banner h1{
+    font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .banner h1{ 
+    text-align: center;
+    font-size:25px;
+}
+
+}
+
+@media (max-width: 400px) {
+}
+  
+
+/* marquee */
+.notice {
+    border: 2px solid #84ac64;
+    width: 80%;
+    /* height: 46px; */
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+.notice-content {
+    display: flex;
+    align-items: center;
+}
+.notice-content h3 {
+    background-color: #84ac64;
+    width: fit-content;
+    padding: 5px;
+}
+/* Head of Institute */
+.chairman {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-top: 10px;
+}
+.chairman-profile {
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+.chairman-profile img {
+    width: 100%;
+    height: auto;
+}
+.chairman-dt{
+    padding: 16px;
+}
+
+.chairman-dt h3{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.chairman-dt p{
+    columns: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+/* courses */
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.course-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.course-item h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.course-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  color: #27ae60;
+  margin-left: auto;
+}
+
+.checkout-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+  .course-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .course-item img {
+      margin-bottom: 10px;
+  }
+
+  /* gallery heading */
+  .gallery-dd{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+}
+
+@media (max-width: 400px) {
+  .gallery-dd{
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+
+
+/* Gallary */
+.g-section{
+  margin-bottom: 20px;
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    border: 1px solid #0e3481;
+    color: #0e3481;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.gallery-dd{
+    width: 600px;
+    margin: 0 auto;
+}
+/* .g-b{
+    border-bottom: 2px solid black;
+    padding: 5px;
+} */
+.gallery-dd h2 {
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.gallery-dd p{
+    color: 	#808080;
+    text-align: center;
+    margin-top: 20px;
+    font-family: poppins;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/* carousel */
+
